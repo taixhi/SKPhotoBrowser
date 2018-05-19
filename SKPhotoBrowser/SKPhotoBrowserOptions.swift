@@ -22,13 +22,13 @@ public struct SKPhotoBrowserOptions {
 
     public static var displayHorizontalScrollIndicator: Bool = true
     public static var displayVerticalScrollIndicator: Bool = true
-    public static var displayPagingHorizontalScrollIndicator: Bool = true
     
     public static var bounceAnimation: Bool = false
     public static var enableZoomBlackArea: Bool = true
     public static var enableSingleTapDismiss: Bool = false
     
     public static var backgroundColor: UIColor = .black
+    public static var textAndIconColor: UIColor = .white
     public static var indicatorColor: UIColor = .white
     public static var indicatorStyle: UIActivityIndicatorViewStyle = .whiteLarge
 
@@ -40,15 +40,10 @@ public struct SKPhotoBrowserOptions {
     public static var swapCloseAndDeleteButtons: Bool = false
     public static var disableVerticalSwipe: Bool = false
 
-    /// if this value is true, the long photo width will match the screen,
-    /// and the minScale is 1.0, the maxScale is 2.5
-    /// Default: false
-    public static var longPhotoWidthMatchScreen: Bool = false
-}
-
-public struct SKButtonOptions {
-    public static var closeButtonPadding: CGPoint = CGPoint(x: 5, y: 20)
-    public static var deleteButtonPadding: CGPoint = CGPoint(x: 5, y: 20)
+    /// Offset from top and from nearest screen edge of close button and delete button.
+    ///
+    /// - Default: 5
+    public static var closeAndDeleteButtonPadding: CGFloat = 5
 }
 
 public struct SKCaptionOptions {

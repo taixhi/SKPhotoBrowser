@@ -29,7 +29,7 @@ open class SKCaptionView: UIView {
     }
     
     open override func sizeThatFits(_ size: CGSize) -> CGSize {
-        guard let text = photoLabel.text, text.count > 0 else {
+        guard let text = photoLabel.text, text.characters.count > 0 else {
             return CGSize.zero
         }
         
@@ -37,7 +37,7 @@ open class SKCaptionView: UIView {
         let width: CGFloat = size.width - photoLabelPadding * 2
         let height: CGFloat = photoLabel.font.lineHeight * CGFloat(photoLabel.numberOfLines)
         
-        let attributedText = NSAttributedString(string: text, attributes: [NSAttributedStringKey.font: font])
+        let attributedText = NSAttributedString(string: text, attributes: [NSFontAttributeName: font])
         let textSize = attributedText.boundingRect(with: CGSize(width: width, height: height), options: .usesLineFragmentOrigin, context: nil).size
         
         return CGSize(width: textSize.width, height: textSize.height + photoLabelPadding * 2)
