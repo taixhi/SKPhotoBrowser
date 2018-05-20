@@ -1,10 +1,12 @@
-SKPhotoBrowser
+# SKPhotoBrowser + Color modification / bug fix for swift 4
 ![Swift](http://img.shields.io/badge/swift-4.0-brightgreen.svg)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Cocoapods Compatible](https://img.shields.io/cocoapods/v/SKPhotoBrowser.svg?style=flat)](http://cocoadocs.org/docsets/SKPhotoBrowser)
 [![All Contributors](https://img.shields.io/badge/all_contributors-20-orange.svg?style=flat-square)](#contributors)
 
-Simple PhotoBrowser/Viewer inspired by facebook, twitter photo browsers written by swift, based on [IDMPhotoBrowser](https://github.com/ideaismobile/IDMPhotoBrowser), [MWPhotoBrowser](https://github.com/mwaterfall/MWPhotoBrowser).
+Fork of Simple PhotoBrowser/Viewer inspired by facebook, twitter photo browsers written by swift, based on [IDMPhotoBrowser](https://github.com/ideaismobile/IDMPhotoBrowser), [MWPhotoBrowser](https://github.com/mwaterfall/MWPhotoBrowser).
+
+Added color modification and bug fix to adopt to swift 4
 
 ## features
 - Display one or more images by providing either `UIImage` objects, or string of URL array.
